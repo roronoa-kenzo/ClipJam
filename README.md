@@ -1,5 +1,6 @@
 # ClipJam
-## A Social Media for Tiktok's Editors ##### by Kenzo on Ruby with Rails (In Developement)
+## A Social Media for Tiktok's Editors (In Developement)
+by Kenzo on Ruby with Rails 
 
 ### Description:
 
