@@ -1,0 +1,147 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background: #1f2023;
+    min-height: 100vh;
+}
+
+p{
+    color: white;
+}
+
+a {
+    color: white;
+}
+
+h1 {
+    color: white;
+    display: flex;
+    justify-content: center;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+h2{
+    color: white;
+}
+
+.em_char{
+    color: white;
+}
+
+.title{
+    font-size: 25px;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    font-family: monospace;
+}
+
+.title-h6{
+    font-size: 25px;
+    color: white;
+    margin-top: 5%;
+    margin-left: 5%;
+    margin-bottom: 5%;
+    font-family: monospace;
+}
+
+label {
+    color: white;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.btn2 {
+    display: flex;
+    justify-content: center;
+}
+
+
+/* Cibler le label avec for="description" */
+label[for="description"] {
+    display: block; /* Ceci est déjà appliqué en ligne */
+    color: blue; /* Exemple de style */
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+/* Cibler l'input avec id="title" */
+input#post_title {
+    width: 50vh; /* Faire l'input prendre toute la largeur */
+    border-radius: 6px; /* Ajouter des coins arrondis */
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); /* Ajouter une ombre légère */
+    margin-top: 5%;
+    margin-bottom: 5%;
+    height: 5vh;
+}
+
+/* Cibler l'input avec id="description" */
+input#post_description {
+    margin-top: 5%;
+    margin-bottom: 5%;
+    width: 50vh; /* Faire l'input prendre toute la largeur */
+    border-radius: 6px; /* Ajouter des coins arrondis */
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); /* Ajouter une ombre légère */
+    height: 5vh;
+}
+
+.miniature {
+    width: 200px;
+    height: 200px;
+}
+
+.btn-video{
+    display: flex;
+    background-color: black;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    box-shadow: 10px 15px 5px #18181b;
+    padding-left: 1%;
+}
+
+.video-date{
+    background-color: black;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    margin-top: 3%;
+    padding: 25px;
+    box-shadow: 10px 15px 5px #18181b;
+}
+
+.video-title{
+    background-color: black;
+    padding: 25px;
+    font-size: 3rem;
+    line-height: 1;
+    box-shadow: 10px 15px 5px #18181b;
+}
+
+.video-views{
+    background-color: black;
+    padding-left: 25px;
+    font-size: 1rem;
+    line-height: 1;
+    box-shadow: 10px 15px 5px #18181b;
+}
+
+.video-show{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.img-post {
+    max-width: 309px;
+    /* height: auto; */
+    max-height: 206px;
+    height: 206px;
+    width: 309px;
+}

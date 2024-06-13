@@ -1,0 +1,9 @@
+<h6 class="title-h6">
+  <%= @message %>
+</h6>
+<%- if current_user %>
+  <div id="posts" class="video-show">
+     <%= render @posts %>
+  </div>
+<% end %>
+

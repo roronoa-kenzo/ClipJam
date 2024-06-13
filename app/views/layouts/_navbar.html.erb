@@ -1,0 +1,45 @@
+<nav class="navbar">
+  <div class="menu-left">
+    <div class="logo">
+      <%= link_to root_path do %>
+        <%= image_tag("logo.png", :alt => "logo") %>
+      <% end %>
+    </div>
+    <%- if current_user %>
+    <ul class="nav-btn">
+      <li>
+        <a class = "#" href="#"><%= link_to "Upload", new_post_path %></a>
+      </li>
+      <li>
+        <a class = "#" href="#"><%= link_to "My Clip", pages_media_path %></a>
+      </li>
+      <li>
+        <a class = "#" href="#"><%#= link_to "Profile", current_user %></a>
+      </li>
+      <li>
+        <%= button_to("Log out", destroy_user_session_path, method: :delete ) %></li>
+        <% else %>
+      <li>
+        <a class = "#" href="#"><%= link_to "Sign Up", new_user_registration_path %></a>
+      </li>
+    </ul>
+      <% end %>
+  </div>
+  <div class="menu-right">
+    <a href="#" class="cta-button">Contact</a>
+    <div class="hamburger" onclick="toggleMobileMenu()">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </div>
+</nav>
+<div id="mobileMenu" class="mobile-menu">
+  <a href="#" class="closebtn" onclick="toggleMobileMenu()">&times;</a>
+  <a href="#">Home</a>
+  <a href="#">Services</a>
+  <a href="#">About</a>
+  <a href="#" class="cta-button">Contact Us</a>
+</div>
+
+<%# <script src="script.js"></script> %>

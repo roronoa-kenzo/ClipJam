@@ -1,0 +1,184 @@
+
+.form_btn {
+    text-decoration: none;
+    position: relative;
+    border: none;
+    font-size: 14px;
+    font-family: inherit;
+    cursor: pointer;
+    color: #fff;
+    width: 9em;
+    height: 3em;
+    line-height: 2em;
+    text-align: center;
+    background: linear-gradient(90deg, #0497d9, #f441a5, #580641, #0497d9);
+    background-size: 300%;
+    border-radius: 30px;
+    /*z-index: 1;*/
+    margin-top: 5vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 5%;
+    margin-bottom: 5%;
+    margin-left: 2%;
+}
+
+.form_btn:hover {
+    animation: ani 8s linear infinite;
+    border: none;
+    outline: 2px dashed #ad2b89;
+    outline-offset: 0.5em;
+}
+
+@keyframes ani {
+    0% {
+        background-position: 0%;
+    }
+
+    100% {
+        background-position: 400%;
+    }
+}
+
+.form_btn:before {
+    content: "";
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    right: -5px;
+    /*bottom: -5px;*/
+    z-index: -1;
+    background: linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
+    background-size: 400%;
+    border-radius: 35px;
+    transition: 1s;
+}
+
+.form_btn:hover::before {
+    /*filter: blur(20px);*/
+}
+
+.form_btn:active {
+    background: linear-gradient(32deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
+}
+/*------------------------------------Text-Input*/
+
+/* Styles pour tous les inputs de type post_title */
+.form_text {
+    width: 50vh;
+    max-width: 20em;
+    display: flex;
+    flex-direction: column;
+    z-index: 2;
+    color: #fff;
+    font-size: 1.25rem;
+    line-height: 1;
+    border-style: none;
+    outline: none;
+    height: calc(1em + 1.6em + 0.5em);
+    padding: 0.8em 1em;
+    border: 0.25em solid transparent;
+    background-image: linear-gradient(#000, #000), linear-gradient(120deg, #f09 0%, #0ff 50%, #9f0 100%);
+    background-origin: border-box;
+    background-clip: padding-box, border-box;
+    border-radius: 1.8em;
+    background-size: 200% 100%;
+    transition: background-position 0.8s ease-out;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.form_text:hover {
+    background-position: 100% 0;
+}
+
+.form_text:focus {
+    outline: 2px dashed #ad2b89;
+    outline-offset: 0.5em;
+}
+
+@supports (mix-blend-mode: darken) {
+    .form_text {
+        position: relative;
+        mix-blend-mode: lighten;
+    }
+
+    .form_text::before {
+        content: attr(placeholder);
+        position: absolute;
+        left: 3em;
+        top: -0.28em;
+        background: #000;
+        padding: 0 0.5em;
+        margin-bottom: 0.5em;
+        text-transform: uppercase;
+        font-size: 0.875em;
+        letter-spacing: 0.1em;
+        color: rgba(255, 220, 255, 0.6);
+        cursor: pointer;
+    }
+}
+/*---------------------------------------Button-with-image-inside---------*/
+.image_btn{
+    text-decoration: none;
+    position: relative;
+    border: none;
+    font-size: 14px;
+    font-family: inherit;
+    cursor: pointer;
+    color: #fff;
+    width: 3em;
+    height: 3em;
+    line-height: 2em;
+    text-align: center;
+    background: white;
+    background-size: 300%;
+    border-radius: 30px;
+    /*z-index: 1;*/
+    margin-top: 5vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 5%;
+    margin-bottom: 5%;
+}
+
+.image_btn:hover {
+    animation: ani 8s linear infinite;
+    border: none;
+    outline: 2px dashed #ad2b89;
+    outline-offset: 0.5em;
+}
+
+@keyframes ani {
+    0% {
+        background-position: 0%;
+    }
+
+    100% {
+        background-position: 400%;
+    }
+}
+
+.image_btn:before {
+    content: "";
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    right: -5px;
+    /*bottom: -5px;*/
+    z-index: -1;
+    background: linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
+    background-size: 400%;
+    border-radius: 35px;
+    transition: 1s;
+}
+
+.image_btn:hover::before {
+    /*filter: blur(20px);*/
+}
+
+.image_btn:active {
+    background: linear-gradient(32deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
+}
